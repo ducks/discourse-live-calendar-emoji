@@ -1,0 +1,9 @@
+show_current_date:
+  type: bool
+  default: true
+  description: "Render the 📅 calendar emoji as a live icon showing today's date (like the Apple Calendar app icon). When off, the normal emoji is left untouched."
+
+icon_size:
+  type: string
+  default: "1.2em"
+  description: "Size of the rendered calendar icon (any CSS length, e.g. 1.2em, 24px). It scales with surrounding text by default."

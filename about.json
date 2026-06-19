@@ -1,0 +1,10 @@
+{
+  "name": "Live Calendar Emoji",
+  "about_url": "https://github.com/ducks/discourse-live-calendar-emoji",
+  "license_url": "https://github.com/ducks/discourse-live-calendar-emoji/blob/main/LICENSE",
+  "component": true,
+  "settings": {
+    "show_current_date": true,
+    "icon_size": "1.2em"
+  }
+}
