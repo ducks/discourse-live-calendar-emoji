@@ -8,7 +8,7 @@ Type 📅 (the `:date:` emoji) anywhere in a post and it renders as a live
 calendar icon. The date is computed in the browser at render time, so it
 always shows today regardless of when the post was written.
 
-![example](https://github.com/ducks/discourse-live-calendar-emoji)
+![The 📅 emoji rendered as a calendar icon showing today's date](images/example.png)
 
 ## How it works
 
