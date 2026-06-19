@@ -38,12 +38,22 @@ function defineCalendarIcon() {
     }
 
     render() {
-      const size = this.getAttribute("size") || "1em";
+      const size = this.getAttribute("size") || "1.6em";
       this.shadowRoot.innerHTML = `
+        <style>
+          /* Flow like the emoji we replaced: inline, text-sized, baseline
+             aligned. Size the host (not the svg) so layout matches a glyph. */
+          :host {
+            display: inline-block;
+            width: ${size};
+            height: ${size};
+            vertical-align: text-bottom;
+            line-height: 0;
+          }
+          svg { display: block; width: 100%; height: 100%; }
+        </style>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"
-             width="${size}" height="${size}" role="img"
-             style="vertical-align: text-bottom"
-             aria-label="${this.month} ${this.day}">
+             role="img" aria-label="${this.month} ${this.day}">
           <rect x="8" y="24" width="104" height="88" rx="8" ry="8"
                 fill="#fff" stroke="#e0e0e0" stroke-width="2"/>
           <rect x="8" y="24" width="104" height="28" rx="8" ry="8"
